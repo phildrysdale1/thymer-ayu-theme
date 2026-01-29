@@ -1,0 +1,434 @@
+/*
+* Ayu Theme for Thymer
+* Bright, modern theme with warm accents
+* Variants: Dark (Ayu Dark) and Light (Ayu Light)
+*/
+
+/* ------------------------------------------- */
+/* Ayu Dark - Warm & Modern                    */
+/* ------------------------------------------- */
+html[data-theme="basic-dark-ayu"] {
+    color-scheme: dark;
+
+    /* ------------------------------------------- */
+    /* 1. Headings - Warm Cream                   */
+    /* ------------------------------------------- */
+    .heading-h1,
+    .heading-h2,
+    .heading-h3,
+    .heading-h4,
+    .heading-h5,
+    .heading-h6 {
+        color: #e6e1cf;
+    }
+
+    --text-base-size: 16px;
+  
+    /* ------------------------------------------- */
+    /* 2. Background Colors - Deep Dark Blues     */
+    /* ------------------------------------------- */
+    --color-bg-50: #8a919d;
+    --color-bg-100: #6c7380;
+    --color-bg-150: #5c6773;
+    --color-bg-200: #3e4451;
+    --color-bg-300: #2d3541;
+    --color-bg-400: #1f2430;
+    --color-bg-500: #191f2b;
+    --color-bg-600: #191f2b;
+    --color-bg-700: #0d1016;
+    --color-bg-800: #11151c; /* Sidebar - medium dark */
+    --color-bg-900: #0f1419;  /* Main window - deep dark */
+    --color-bg-950: #0a0e14;
+    --color-bg-500-50: rgba(25, 31, 43, 0.5);
+    --color-bg-950-50: rgba(10, 14, 20, 0.65);
+
+    /* ------------------------------------------- */
+    /* 3. Primary Colors - Warm Orange            */
+    /* ------------------------------------------- */
+    --color-primary-50: #ffe7d1;
+    --color-primary-100: #ffd4b3;
+    --color-primary-200: #ffb380;
+    --color-primary-300: #ffa366;
+    --color-primary-400: #ff8f40; /* Ayu Orange */
+    --color-primary-500: #f29718;
+    --color-primary-600: #e68900;
+    --color-primary-700: #cc7700;
+    --color-primary-800: #b36600;
+    --color-primary-900: #995500;
+    --color-primary-950: #804400;
+    --color-primary-400-70: rgba(255, 143, 64, 0.7);
+    --color-primary-950-20: rgba(128, 68, 0, 0.2);
+    --color-primary-text-100: #0f1419;
+
+    /* ------------------------------------------- */
+    /* 4. Text & Icons - Warm Grays               */
+    /* ------------------------------------------- */
+    --color-text-50: #e6e1cf;
+    --color-text-100: #e6e1cf;
+    --color-text-200: #d9d5c3;
+    --color-text-300: #bfb8a5;
+    --color-text-400: #a39988;
+    --color-text-500: #8a919d;
+    --color-text-600: #6c7380;
+    --color-text-700: #ff8f40;
+    --color-text-800: #bfb8a5;
+    --color-text-900: #2d3541;
+    --color-text-950: #6c7380;
+
+    /* ------------------------------------------- */
+    /* 5. Semantic Colors - Ayu Palette           */
+    /* ------------------------------------------- */
+    --text-ok: #aad94c;
+    --text-status-online: #aad94c;
+    --text-warning: #ffcc66;
+    --text-error: #f07178;
+    --bg-alert: #f07178;
+    --fg-alert: #e6e1cf;
+
+    /* ------------------------------------------- */
+    /* 6. Links, Tags & Mentions - Warm Orange    */
+    /* ------------------------------------------- */
+    --link-color: #ff8f40;
+    --link-hover-color: #ffa366;
+    --ed-link-color: #ff8f40;
+    --ed-link-hover-color: #ffa366;
+
+    --ed-hashtag-color: #ffcc66;
+    --ed-hashtag-bg: rgba(255, 204, 102, 0.15);
+
+    --ed-mention-color: #ff8f40;
+    --ed-mention-bg: rgba(255, 143, 64, 0.15);
+    --ed-mention-hover-bg: rgba(255, 143, 64, 0.25);
+    --ed-mention-hover-color: #ffa366;
+
+    --ed-datetime-color: #ffcc66;
+    --ed-datetime-bg: rgba(255, 204, 102, 0.15);
+
+    /* ------------------------------------------- */
+    /* 7. Tasks & Checkboxes - Warm Orange        */
+    /* ------------------------------------------- */
+    --ed-check-div-border: #ff8f40;
+    --ed-check-div-hover-border: #ffa366;
+    --ed-check-done-bg: #ff8f40;
+    --ed-check-done-fg: #0f1419;
+
+    /* Done task styling */
+    .listitem.listitem-task.state-done .lineitem-text {
+        color: #6c7380 !important;
+        text-decoration-color: #6c7380 !important;
+        opacity: 1 !important;
+    }
+
+    /* ------------------------------------------- */
+    /* 8. Selection & Caret                        */
+    /* ------------------------------------------- */
+    --selection-bg: rgba(255, 143, 64, 0.3);
+    --selection-fg: #e6e1cf;
+    --ed-selection-self-bg: rgba(255, 143, 64, 0.3);
+    --ed-selection-blurred-bg: rgba(255, 143, 64, 0.15);
+
+    --ed-caret-self-radius: 2px;
+    --ed-caret-self-border-width: 0px;
+    --ed-caret-self-background: color-mix(in srgb, #ff8f40 70%, transparent);
+    --ed-caret-self-box-shadow: 0 0 2px #ff8f40;
+
+    /* ------------------------------------------- */
+    /* 9. Quotes & Code - Dark Containers         */
+    /* ------------------------------------------- */
+    --ed-quote-border-color: #ff8f40;
+
+    --ed-code-border: transparent;
+    --ed-code-bg: rgba(92, 103, 115, 0.3);
+
+    /* Inline code */
+    .lineitem-code {
+        background-color: var(--color-bg-200) !important;
+        color: #ffcc66 !important;
+        border-radius: 4px;
+        padding: 2px 5px;
+        font-family: var(--font-monospace);
+    }
+
+    /* Note blocks */
+    --ed-block-note-bg: rgba(255, 143, 64, 0.1);
+    --ed-block-note-border: #ff8f40;
+
+    /* ------------------------------------------- */
+    /* 10. UI Components - Dark Interface         */
+    /* ------------------------------------------- */
+    --cards-bg: #0f1419;
+    --cards-hover-bg: #11151c;
+    --cards-border-color: transparent;
+    --cards-border-color-focused: transparent;
+
+    --side-bg-active-focus: #f29718;
+    --side-fg-active-focus: #0f1419;
+    --sidebar-bg-hover: #11151c;
+    --sidebar-border-color: transparent;
+
+    --cmdpal-bg-color: #0f1419;
+    --cmdpal-selected-bg-color: #ff8f40;
+    --cmdpal-selected-fg-color: #0f1419;
+    --cmdpal-hover-bg-color: #11151c;
+    --cmdpal-border-color: transparent;
+
+    --input-bg-color: #0f1419;
+    --input-border-color: transparent;
+    --input-border-focus: 1px solid #ff8f40;
+    --input-border-shadow: 0 0 8px rgba(255, 143, 64, 0.4);
+
+    --button-primary-bg-color: #ff8f40;
+    --button-primary-fg-color: #0f1419;
+    --button-primary-bg-hover-color: #f29718;
+    --button-bg-color: #1f2430;
+    --button-border-color: transparent;
+    --button-bg-hover-color: #2d3541;
+
+    --color-shadow: rgba(10, 14, 20, 0.5);
+    --color-shadow-cards: 0 4px 6px rgba(10, 14, 20, 0.4);
+    --color-shadow-hover: 0 6px 12px rgba(10, 14, 20, 0.5);
+
+    --logo-color: #ff8f40;
+    --logo-glow-shadow:
+        0 0 15px rgba(255, 143, 64, 0.4),
+        0 0 30px rgba(255, 143, 64, 0.2);
+
+    /* Enums - Ayu Palette */
+    --enum-red-bg: rgba(240, 113, 120, 0.25);
+    --enum-red-fg: #f07178;
+    --enum-orange-bg: rgba(255, 143, 64, 0.25);
+    --enum-orange-fg: #ff8f40;
+    --enum-yellow-bg: rgba(255, 204, 102, 0.25);
+    --enum-yellow-fg: #ffcc66;
+    --enum-green-bg: rgba(170, 217, 76, 0.25);
+    --enum-green-fg: #aad94c;
+    --enum-cyan-bg: rgba(95, 191, 227, 0.25);
+    --enum-cyan-fg: #5fbfe3;
+    --enum-blue-bg: rgba(89, 193, 242, 0.25);
+    --enum-blue-fg: #59c2f2;
+    --enum-purple-bg: rgba(212, 191, 255, 0.25);
+    --enum-purple-fg: #d4bfff;
+    --enum-pink-bg: rgba(255, 121, 198, 0.25);
+    --enum-pink-fg: #ff79c6;
+
+    --prop-border-focused: #0f1419;
+    --prop-bg-focused: rgba(255, 143, 64, 0.3);
+    --shadow-sticky-row: 0 6px 12px rgba(0, 0, 0, 0);
+    --ed-drag-handle-color: #ff8f40;
+    --ed-drag-handle-hover-border: #ffa366;
+
+    --gradient-scrim: none;
+}
+/* ------------------------------------------- */
+/* Ayu Light - Bright & Clean                  */
+/* ------------------------------------------- */
+html[data-theme="basic-white-ayu"] {
+    color-scheme: light;
+
+    /* ------------------------------------------- */
+    /* 1. Headings - Deep Gray                    */
+    /* ------------------------------------------- */
+    .heading-h1,
+    .heading-h2,
+    .heading-h3,
+    .heading-h4,
+    .heading-h5,
+    .heading-h6 {
+        color: #5c6773;
+    }
+
+    /* ------------------------------------------- */
+    /* 2. Background Colors - Bright White        */
+    /* ------------------------------------------- */
+    --color-bg-50: #5c6773;
+    --color-bg-100: #828c99;
+    --color-bg-150: #abb0b6;
+    --color-bg-200: #d9dce0;
+    --color-bg-300: #e7eaed;
+    --color-bg-400: #f3f4f5;
+    --color-bg-500: #fafafa;
+    --color-bg-600: #fafafa;
+    --color-bg-700: #ffffff;
+    --color-bg-800: #f3f4f5; /* Sidebar - light gray */
+    --color-bg-900: #fafafa; /* Main window - bright */
+    --color-bg-950: #ffffff;
+    --color-bg-500-50: rgba(250, 250, 250, 0.5);
+    --color-bg-950-50: rgba(255, 255, 255, 0.65);
+
+    /* ------------------------------------------- */
+    /* 3. Primary Colors - Warm Purple            */
+    /* ------------------------------------------- */
+    --color-primary-50: #7c4dbd;
+    --color-primary-100: #8c5dcd;
+    --color-primary-200: #9c6ddd;
+    --color-primary-300: #a370cc;
+    --color-primary-400: #a37acc; /* Ayu Purple */
+    --color-primary-500: #9870c0;
+    --color-primary-600: #8d66b4;
+    --color-primary-700: #825ca8;
+    --color-primary-800: #77529c;
+    --color-primary-900: #6c4890;
+    --color-primary-950: #f0e7ff;
+    --color-primary-400-70: rgba(163, 122, 204, 0.7);
+    --color-primary-950-20: rgba(240, 231, 255, 0.2);
+    --color-primary-text-100: #fafafa;
+
+    /* ------------------------------------------- */
+    /* 4. Text & Icons - Cool Grays               */
+    /* ------------------------------------------- */
+    --color-text-50: #3e4451;
+    --color-text-100: #5c6773;
+    --color-text-200: #5c6773;
+    --color-text-300: #6c7380;
+    --color-text-400: #828c99;
+    --color-text-500: #959ca8;
+    --color-text-600: #abb0b6;
+    --color-text-700: #a37acc;
+    --color-text-800: #5c6773;
+    --color-text-900: #fafafa;
+    --color-text-950: #828c99;
+
+    /* ------------------------------------------- */
+    /* 5. Semantic Colors - Ayu Light Palette     */
+    /* ------------------------------------------- */
+    --text-ok: #86b300;
+    --text-status-online: #86b300;
+    --text-warning: #f2ae49;
+    --text-error: #f07178;
+    --bg-alert: #f07178;
+    --fg-alert: #fafafa;
+
+    /* ------------------------------------------- */
+    /* 6. Links, Tags & Mentions - Purple/Orange  */
+    /* ------------------------------------------- */
+    --link-color: #a37acc;
+    --link-hover-color: #9870c0;
+    --ed-link-color: #a37acc;
+    --ed-link-hover-color: #9870c0;
+
+    --ed-hashtag-color: #f2ae49;
+    --ed-hashtag-bg: rgba(242, 174, 73, 0.1);
+
+    --ed-mention-color: #a37acc;
+    --ed-mention-bg: rgba(163, 122, 204, 0.1);
+    --ed-mention-hover-bg: rgba(163, 122, 204, 0.2);
+    --ed-mention-hover-color: #9870c0;
+
+    --ed-datetime-color: #f2ae49;
+    --ed-datetime-bg: rgba(242, 174, 73, 0.1);
+
+    /* ------------------------------------------- */
+    /* 7. Tasks & Checkboxes - Purple             */
+    /* ------------------------------------------- */
+    --ed-check-div-border: #a37acc;
+    --ed-check-div-hover-border: #9870c0;
+    --ed-check-done-bg: #a37acc;
+    --ed-check-done-fg: #fafafa;
+
+    /* Done task styling */
+    .listitem.listitem-task.state-done .lineitem-text {
+        color: #828c99 !important;
+        text-decoration-color: #828c99 !important;
+        opacity: 1 !important;
+    }
+
+    /* ------------------------------------------- */
+    /* 8. Selection & Caret                        */
+    /* ------------------------------------------- */
+    --selection-bg: rgba(163, 122, 204, 0.2);
+    --selection-fg: #5c6773;
+    --ed-selection-self-bg: rgba(163, 122, 204, 0.2);
+    --ed-selection-blurred-bg: rgba(163, 122, 204, 0.1);
+
+    --ed-caret-self-radius: 2px;
+    --ed-caret-self-border-width: 0px;
+    --ed-caret-self-background: color-mix(in srgb, #a37acc 70%, transparent);
+    --ed-caret-self-box-shadow: 0 0 2px #a37acc;
+
+    /* ------------------------------------------- */
+    /* 9. Quotes & Code - Light Containers        */
+    /* ------------------------------------------- */
+    --ed-quote-border-color: #a37acc;
+
+    --ed-code-border: transparent;
+    --ed-code-bg: rgba(171, 176, 182, 0.2);
+
+    /* Inline code */
+    .lineitem-code {
+        background-color: var(--color-bg-200) !important;
+        color: #9870c0 !important;
+        border-radius: 4px;
+        padding: 2px 5px;
+        font-family: var(--font-monospace);
+    }
+
+    /* Note blocks */
+    --ed-block-note-bg: rgba(163, 122, 204, 0.08);
+    --ed-block-note-border: #a37acc;
+
+    /* ------------------------------------------- */
+    /* 10. UI Components - Light Interface        */
+    /* ------------------------------------------- */
+    --cards-bg: #fafafa;
+    --cards-hover-bg: #f3f4f5;
+    --cards-border-color: transparent;
+    --cards-border-color-focused: transparent;
+
+    --side-bg-active-focus: #a37acc;
+    --side-fg-active-focus: #fafafa;
+    --sidebar-bg-hover: #f3f4f5;
+    --sidebar-border-color: transparent;
+
+    --cmdpal-bg-color: #fafafa;
+    --cmdpal-selected-bg-color: #a37acc;
+    --cmdpal-selected-fg-color: #fafafa;
+    --cmdpal-hover-bg-color: #f3f4f5;
+    --cmdpal-border-color: transparent;
+
+    --input-bg-color: #fafafa;
+    --input-border-color: transparent;
+    --input-border-focus: 1px solid #a37acc;
+    --input-border-shadow: 0 0 8px rgba(163, 122, 204, 0.3);
+
+    --button-primary-bg-color: #a37acc;
+    --button-primary-fg-color: #fafafa;
+    --button-primary-bg-hover-color: #9870c0;
+    --button-bg-color: #f3f4f5;
+    --button-border-color: transparent;
+    --button-bg-hover-color: #e7eaed;
+
+    --color-shadow: rgba(92, 103, 115, 0.12);
+    --color-shadow-cards: 0 4px 6px rgba(92, 103, 115, 0.08);
+    --color-shadow-hover: 0 6px 12px rgba(92, 103, 115, 0.15);
+
+    --logo-color: #a37acc;
+    --logo-glow-shadow:
+        0 0 15px rgba(163, 122, 204, 0.3),
+        0 0 30px rgba(163, 122, 204, 0.2);
+
+    /* Enums - Ayu Light Palette */
+    --enum-red-bg: rgba(240, 113, 120, 0.15);
+    --enum-red-fg: #f07178;
+    --enum-orange-bg: rgba(242, 151, 24, 0.15);
+    --enum-orange-fg: #f29718;
+    --enum-yellow-bg: rgba(242, 174, 73, 0.15);
+    --enum-yellow-fg: #f2ae49;
+    --enum-green-bg: rgba(134, 179, 0, 0.15);
+    --enum-green-fg: #86b300;
+    --enum-cyan-bg: rgba(85, 181, 219, 0.15);
+    --enum-cyan-fg: #55b5db;
+    --enum-blue-bg: rgba(64, 160, 224, 0.15);
+    --enum-blue-fg: #40a0e0;
+    --enum-purple-bg: rgba(163, 122, 204, 0.15);
+    --enum-purple-fg: #a37acc;
+    --enum-pink-bg: rgba(242, 119, 182, 0.15);
+    --enum-pink-fg: #f277b6;
+
+    --prop-border-focused: #fafafa;
+    --prop-bg-focused: rgba(163, 122, 204, 0.15);
+    --shadow-sticky-row: 0 6px 12px rgba(0, 0, 0, 0);
+    --ed-drag-handle-color: #a37acc;
+    --ed-drag-handle-hover-border: #9870c0;
+
+    --gradient-scrim: none;
+}
