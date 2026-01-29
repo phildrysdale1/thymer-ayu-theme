@@ -1,9 +1,6 @@
 # thymer-ayu-themes
 Dark and Light theme for the Thymer app based on the [Ayu palette](https://github.com/ayu-theme/ayu-colors).
 
-# Thymer-Github-Themes
-These themes are designed for the Thymer notes application. Designed around the Github theme's palette.
-
 If you add any areas I've missed please do submit a PR or tag me in the Discord themes channel and I'll add the changes :)
 
 ## How to apply:
