@@ -137,8 +137,11 @@ html[data-theme="basic-dark-ayu"] {
     /* ------------------------------------------- */
     --ed-quote-border-color: #ff8f40;
 
-    --ed-code-border: transparent;
-    --ed-code-bg: rgba(92, 103, 115, 0.3);
+    --ed-container-border-color: rgba(92, 103, 115, 0.25); /* #5c6773 */
+    --ed-container-bg-color:     rgba(138, 145, 157, 0.18); /* #8a919d */
+    
+    --ed-code-bg:                rgba(92, 103, 115, 0.18); /* #5c6773 */
+    --ed-code-border:            rgba(138, 145, 157, 0.08); /* #8a919d */
 
     /* Inline code */
     .lineitem-code {
@@ -222,7 +225,7 @@ html[data-theme="basic-dark-ayu"] {
 /* ------------------------------------------- */
 /* Ayu Light - Bright & Clean                  */
 /* ------------------------------------------- */
-html[data-theme="basic-white-ayu"] {
+html[data-theme="basic-light-ayu"] {
     color-scheme: light;
 
     /* ------------------------------------------- */
@@ -350,8 +353,11 @@ html[data-theme="basic-white-ayu"] {
     /* ------------------------------------------- */
     --ed-quote-border-color: #a37acc;
 
-    --ed-code-border: transparent;
-    --ed-code-bg: rgba(171, 176, 182, 0.2);
+    --ed-container-border-color: rgba(171, 176, 182, 0.25); /* #abb0b6 */
+    --ed-container-bg-color:     rgba(92, 103, 115, 0.08);  /* #5c6773 */
+    
+    --ed-code-bg:                rgba(171, 176, 182, 0.25); /* #abb0b6 */
+    --ed-code-border:            rgba(92, 103, 115, 0.08);  /* #5c6773 */
 
     /* Inline code */
     .lineitem-code {
